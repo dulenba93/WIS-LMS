@@ -1,0 +1,95 @@
+.faculty-row-container{
+  margin-top: 80px;
+  margin-left: 150px;
+  margin-bottom: 80px;
+  margin-right: 130px;
+  position: absolute;
+  width: 80%;
+  height: 75%;
+  top: 0;
+  left: 0;
+}
+
+
+div.faculty-card-container{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+mat-card.facultyTile{
+  width: 500px;
+  height: 700px;
+  padding: 0px;
+  position: absolute;
+  text-align: center;
+
+  transition: transform .5s;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.006, 1.006, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.mat-card-content>:first-child, .mat-card>:first-child{
+  margin-top: 20px;
+}
+
+.facultyName{
+  font-family: title;
+  font-size: 50px;
+  text-align: center;
+  margin: 0px;
+}
+
+.faculty-image{
+  margin-top: 30px;
+  width: 270px;
+  height: 270px;
+}
+
+// .map {
+//   float: right;
+//   height: 400px;
+//   width: 500px;
+//   margin: 2px;
+//   border: 2px solid black;
+// }
+
+// .faculty-info-box{
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .faculty-info-title{
+//   font-family: title;
+//   font-size: 35px;
+//   margin-left: 10px;
+//   margin-top: 15px;
+//   margin-bottom: 10px
+// }
+
+// .faculty-info-image{
+//   width: 200px;
+//   height: 200px;
+//   margin-left: 130px;
+// }
+
+

@@ -1,0 +1,12 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center"
+  class="faculty-row-container">
+  <div fxLayout="column" fxFlex="33%" class="faculty-card-container" *ngFor="let faculty of faculties">
+    <a routerLink="/faculties/{{faculty.id}}" class="material-link">
+      <mat-card class="facultyTile">
+        <h2 class=facultyName>{{faculty.name}}</h2>
+        <img mat-card-image [src]="faculty.img" class="faculty-image">
+        <div id="map" #map></div>
+      </mat-card>
+    </a>
+  </div>
+</div>

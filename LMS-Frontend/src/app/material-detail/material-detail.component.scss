@@ -1,0 +1,53 @@
+.subjectCard {
+  margin: -100px 0 0 -200px;
+  position: absolute;
+  width: 55%;
+  height: 65%;
+  top: 20%;
+  left: 30%;
+}
+
+.forum-container-title {
+  font-size: 70px;
+  margin: auto;
+  font-family: title;
+  display: inline-block;
+  line-height: 0.9;
+  text-align: center;
+  border-bottom: 2px solid currentColor;
+}
+
+.worker-label{
+  margin: 10px;
+  font-family: title;
+}
+
+.mat-card-content>:first-child, .mat-card>:first-child{
+  margin-top: 10px;
+}
+
+.subject-desc{
+  margin-left:10px;
+}
+
+.subject-menu-label{
+  margin-bottom:0px;
+  font-family: title;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.shortcut-box{
+  margin-left:10px;
+}
+
+.example-tree-invisible {
+  display: none;
+}
+
+.example-tree ul,
+.example-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}

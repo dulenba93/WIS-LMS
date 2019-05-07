@@ -1,0 +1,50 @@
+<mat-card class="home-content">
+  <mat-card-header>
+    <mat-card-title class="forum-container-title">Materials</mat-card-title>
+    <mat-card-subtitle class="forum-container-subtitle">Search for course related materials</mat-card-subtitle>
+  </mat-card-header>
+  <mat-tab-group>
+    <mat-tab label="Software Engineering" class="tab-label">
+      <mat-card-content class="content-window">
+        <mat-grid-list cols="4" rowHeight="250px">
+          <mat-grid-tile *ngFor="let subject of subjects">
+            <a routerLink="/materials/subject/{{subject.id}}" class="material-link">
+              <mat-card class="subjectTile">
+                <h2 class=subjectName>{{subject.name}}</h2>
+                <img mat-card-image [src]="subject.img">
+              </mat-card>
+            </a>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-tab>
+    <mat-tab label="Sports" class="tab-label">
+      <mat-card-content class="content-window">
+        <mat-grid-list cols="4" rowHeight="250px">
+          <mat-grid-tile *ngFor="let subject of subjects">
+            <a routerLink="/materials/subject/{{subject.id}}" class="material-link">
+              <mat-card class="subjectTile">
+                <h2 class=subjectName>{{subject.name}}</h2>
+                <img mat-card-image [src]="subject.img">
+              </mat-card>
+            </a>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-tab>
+    <mat-tab label="Health" class="tab-label">
+      <mat-card-content class="content-window">
+        <mat-grid-list cols="4" rowHeight="250px">
+          <mat-grid-tile *ngFor="let subject of subjects">
+            <a routerLink="/materials/subject/{{subject.id}}" class="material-link">
+              <mat-card class="subjectTile">
+                <h2 class=subjectName>{{subject.name}}</h2>
+                <img mat-card-image [src]="subject.img">
+              </mat-card>
+            </a>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>

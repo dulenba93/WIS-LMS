@@ -1,0 +1,15 @@
+Potrebno je napraviti PluginRepository koji ce adrese iz projekta dohvatati nezavisno
+
+Plugin host - ce nam biti projekat
+Plugin 
+
+Plugin desctiption - 
+Plugin - send request
+
+
+https://www.youtube.com/watch?v=arOqTOEtAVA
+
+spring boot microservices
+http://www.springboottutorial.com/creating-microservices-with-spring-boot-part-1-getting-started
+
+https://www.youtube.com/watch?v=VGK7iZ12tFc

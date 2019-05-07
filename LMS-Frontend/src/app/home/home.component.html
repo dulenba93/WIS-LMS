@@ -1,0 +1,50 @@
+<mat-card class="home-content">
+  <mat-card-header>
+    <mat-card-title class="forum-container-title">Forums</mat-card-title>
+    <mat-card-subtitle class="forum-container-subtitle">Browse the latest news</mat-card-subtitle>
+  </mat-card-header>
+  <mat-tab-group>
+    <mat-tab label="Formal" class="tab-label">
+      <mat-card-content class="content-window">
+        <mat-list>
+          <mat-list-item *ngFor="let article of news">
+            <a routerLink="/home" class="articleItem">
+              <div class="news-container">
+                <h3 class="article-title">{{article.title}}</h3>
+                <p class="article-content">{{article.content}}</p>
+              </div>
+            </a>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-tab>
+    <mat-tab label="Sports" class="tab-label">
+      <mat-card-content class="content-window">
+        <mat-list>
+          <mat-list-item *ngFor="let article of news">
+            <a routerLink="/home" class="articleItem">
+              <div class="news-container">
+                <h3 class="article-title">{{article.title}}</h3>
+                <p class="article-content">{{article.content}}</p>
+              </div>
+            </a>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-tab>
+    <mat-tab label="Health" class="tab-label">
+      <mat-card-content class="content-window">
+        <mat-list>
+          <mat-list-item *ngFor="let article of news">
+            <a routerLink="/home" class="articleItem">
+              <div class="news-container">
+                <h3 class="article-title">{{article.title}}</h3>
+                <p class="article-content">{{article.content}}</p>
+              </div>
+            </a>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
